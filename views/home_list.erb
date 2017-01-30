@@ -1,0 +1,33 @@
+<header>
+<h1 style="text-align: center;">Guess who?</h1>
+<h2 style="text-align: center;">How well do you know your classmates?</h2>
+</header>
+
+
+<p height="200px"style="text-align:center;"><img src="/image_3.jpeg"
+  height="200px"style="text-align:center;"><img src="/image_4.jpg"
+  height="200px"style="text-align:center;"><img src="/image_2.jpeg"
+  height="200px"style="text-align:center;"><img src="/images_1.jpeg"
+  height="200px"style="text-align:center;"><img src="/image_5.jpg">
+</p>
+
+
+
+<div class="list">
+  <h2>Questions</h2>
+  <% [1,2,3,4,5].each do |number| %>
+  <div class="box" style="background: #ddd; border-radius: 10px; padding 12px; margin-bottom: 3px; line-height: 48 px;">
+  <img src="/image_4.jpg" style="height: 20px;">
+  <h1> First question </h1>
+  <select style="background-color: #ddd;">
+    <option selected disabled>Choose here</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+    <option value="5">Five</option>
+  </select>
+  <!-- <%= number %>. -->
+  </div>
+<% end %>
+</div>
